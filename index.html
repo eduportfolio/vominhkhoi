@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vo Minh Khoi Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;800&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <!-- NOISE OVERLAY -->
+    <div class="noise"></div>
+
+    <!-- SIDEBAR NAV -->
+    <nav class="sidebar" id="sidebar">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>VMK<span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-section="about"><span class="nav-index">00</span>about</a></li>
+        <li><a href="#honors" class="nav-link" data-section="honors"><span class="nav-index">01</span>honors</a></li>
+        <li><a href="#research" class="nav-link" data-section="research"><span class="nav-index">02</span>research</a>
+        </li>
+        <li><a href="#projects" class="nav-link" data-section="projects"><span class="nav-index">03</span>projects</a>
+        </li>
+        <li><a href="#social" class="nav-link" data-section="social"><span class="nav-index">04</span>social</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills"><span class="nav-index">05</span>skills</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span>seeking admissions</span>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+      <!-- ── 00. ABOUT ── -->
+      <section id="about" class="section">
+        <div class="section-header">
+          <span class="section-num">_00</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="header-line"></div>
+        </div>
+      
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <div class="photo-frame">
+              <div class="photo-placeholder">
+                <img src="assets/heroimg.jpg" alt="Võ Minh Khôi" />
+              </div>
+              <div class="photo-corner tl"></div>
+              <div class="photo-corner tr"></div>
+              <div class="photo-corner bl"></div>
+              <div class="photo-corner br"></div>
+            </div>
+            <div class="about-meta">
+              <div class="meta-row"><span class="meta-key">school</span><span class="meta-val">VNU-HCM High School for
+                  the Gifted</span></div>
+              <div class="meta-row"><span class="meta-key">target</span><span class="meta-val">Electrical
+                  Engineering</span></div>
+            </div>
+          </div>
+      
+          <div class="about-text">
+            <div class="terminal-prompt">
+              <span class="prompt-user">khoi</span><span class="prompt-at">@</span><span
+                class="prompt-host">vnuhcm-gifted</span><span class="prompt-sym">:~$</span>
+              <span class="prompt-cmd" id="typed-cmd"></span><span class="cursor-blink">▋</span>
+            </div>
+            <div class="about-body">
+              <p>Hi — I'm <strong>Vo Minh Khoi</strong>, a student at VNU-HCM High School for the Gifted with a deep
+                interest in <em>Electrical Engineering</em> and intelligent systems.</p>
+              <p>My work sits at the intersection of embedded systems, signal processing, and applied machine learning.
+                I'm especially drawn to problems where hardware meets data — designing systems that sense, compute, and
+                decide.</p>
+              <p>Outside the lab, I'm a badminton player, a culture-bridge volunteer, and someone who believes
+                engineering is most meaningful when it solves real problems for real people.</p>
+              <p>I am applying to undergraduate programs overseas, aiming to deepen these interests within challenging
+                and globally
+                connected academic settings.</p>
+            </div>
+      
+            <!-- Academic Highlights Section Added -->
+            <div class="academic-highlights"
+              style="margin: 20px 0; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 15px;">
+              <div style="font-family: monospace; color: #888; margin-bottom: 8px;">// ACADEMIC HIGHLIGHTS</div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px;">
+                <div><span style="color: #aaa; font-size: 0.9em;">GPA Grade 9:</span> <strong
+                    style="color: #fff;">9.9</strong></div>
+                <div><span style="color: #aaa; font-size: 0.9em;">GPA Grade 10:</span> <strong
+                    style="color: #fff;">9.7</strong></div>
+                <div><span style="color: #aaa; font-size: 0.9em;">GPA Grade 11:</span> <strong
+                    style="color: #fff;">9.7</strong></div>
+                <div><span style="color: #aaa; font-size: 0.9em;">IELTS:</span> <strong style="color: #fff;">7.5
+                    Overall</strong></div>
+                <div><span style="color: #aaa; font-size: 0.9em;">SAT:</span> <strong style="color: #fff;">1xxx
+                    Overall</strong></div>
+              </div>
+            </div>
+      
+            <div class="tag-row">
+              <span class="tag">EE</span>
+              <span class="tag">ML</span>
+              <span class="tag">Embedded</span>
+              <span class="tag">Smart Grid</span>
+              <span class="tag">IoT</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 01. HONORS ── -->
+      <section id="honors" class="section">
+        <div class="section-header">
+          <span class="section-num">_01</span>
+          <h2 class="section-title">Honors &amp; Awards</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="honors-list">
+
+          <div class="honor-card honor-gold">
+            <div class="honor-img-wrap">
+              <!-- Slider container chứa nhiều ảnh -->
+              <div class="slider-container">
+                <img src="assets/h&a/I-WISE 2026/VÕ MINH KHÔI_260222_155320_page-0001.jpg" alt="IWISE 2026 - Ảnh 1"
+                  class="slider-img active">
+              </div>
+
+              <!-- Nút điều hướng ảnh (Chỉ hiển thị khi có nhiều ảnh) -->
+              <button class="slider-btn prev-btn" aria-label="Previous image">&lt;</button>
+              <button class="slider-btn next-btn" aria-label="Next image">&gt;</button>
+
+              <div class="honor-badge">GOLD</div>
+            </div>
+            <div class="honor-content">
+              <div class="honor-year">2026</div>
+              <h3 class="honor-name">Gold Medal — IWISE 2026</h3>
+              <p class="honor-desc">International competition. Project: <em>AI-Based Monitoring of Water Quality and
+                  Shrimp Health
+                  in Aquaculture</em> — an IoT + ML system for smart aquaculture management.</p>
+            </div>
+            <div class="honor-glow"></div>
+          </div>
+
+          <div class="honor-card honor-silver">
+            <div class="honor-img-wrap">
+              <!-- Slider container chứa nhiều ảnh -->
+              <div class="slider-container">
+                <img src="assets/h&a/HSG - LOP 9/DSC00185.JPG" alt="" class="slider-img active">
+                <img src="assets/h&a/Giải Nhất - Môn Vật lý - HSG Lớp 9 - Cấp Tp.HCM/DSC00177.JPG" alt=""
+                  class="slider-img">
+                <img src="assets/h&a/Giải Nhất - Môn Vật lý - HSG Lớp 9 - Cấp Tp.HCM/DSC00184.JPG" alt=""
+                  class="slider-img">
+                <img src="assets/h&a/Giải Nhất - Môn Vật lý - HSG Lớp 9 - Cấp Tp.HCM/DSC00186.JPG" alt=""
+                  class="slider-img">
+                <img src="assets/h&a/Giải Nhất - Môn Vật lý - HSG Lớp 9 - Cấp Tp.HCM/DSC00191.JPG" alt=""
+                  class="slider-img">
+                <img src="assets/h&a/Giải Nhất - Môn Vật lý - HSG Lớp 9 - Cấp Tp.HCM/DSC00193.JPG" alt=""
+                  class="slider-img">
+                <img src="assets/h&a/Giải Nhất - Môn Vật lý - HSG Lớp 9 - Cấp Tp.HCM/DSC00194.JPG" alt=""
+                  class="slider-img">
+                <img src="assets/h&a/Giải Nhất - Môn Vật lý - HSG Lớp 9 - Cấp Tp.HCM/IMG_9469.JPG" alt=""
+                  class="slider-img">
+              </div>
+
+              <!-- Nút điều hướng ảnh (Chỉ hiển thị khi có nhiều ảnh) -->
+              <button class="slider-btn prev-btn" aria-label="Previous image">&lt;</button>
+              <button class="slider-btn next-btn" aria-label="Next image">&gt;</button>
+
+              <div class="honor-badge">1ST</div>
+            </div>
+            <div class="honor-content">
+              <div class="honor-year">2023–2024</div>
+              <h3 class="honor-name">1st Place — City-Level Physics Olympiad</h3>
+              <p class="honor-desc">Top physics student at the municipal academic excellence competition.</p>
+            </div>
+          </div>
+
+          <div class="honor-card">
+            <div class="honor-img-wrap">
+              <!-- Slider container chứa nhiều ảnh -->
+              <div class="slider-container">
+                <img src="assets/h&a/HSG - LOP 9/DSC00171.JPG" alt="" class="slider-img active">
+                <img src="assets/h&a/HSG - LOP 9/DSC00180.JPG" alt="" class="slider-img">
+              </div>
+
+              <!-- Nút điều hướng ảnh (Chỉ hiển thị khi có nhiều ảnh) -->
+              <button class="slider-btn prev-btn" aria-label="Previous image">&lt;</button>
+              <button class="slider-btn next-btn" aria-label="Next image">&gt;</button>
+
+              <div class="honor-badge">TOP</div>
+            </div>
+            <div class="honor-content">
+              <div class="honor-year">2023–2024</div>
+              <h3 class="honor-name">Best Student — Grade 9 Cohort</h3>
+              <p class="honor-desc">Recognized as the highest-achieving student across the entire Grade 9 year group.
+              </p>
+            </div>
+          </div>
+
+          <div class="honor-card">
+            <div class="honor-img-wrap">
+              <!-- Slider container chứa nhiều ảnh -->
+              <div class="slider-container">
+                <img src="assets/h&a/VIOLYMPIC QUOC GIA - Lớp 9/DSC00182.JPG" alt="" class="slider-img active">
+              </div>
+
+              <!-- Nút điều hướng ảnh (Chỉ hiển thị khi có nhiều ảnh) -->
+              <button class="slider-btn prev-btn" aria-label="Previous image">&lt;</button>
+              <button class="slider-btn next-btn" aria-label="Next image">&gt;</button>
+
+              <div class="honor-badge">BRONZE</div>
+            </div>
+            <div class="honor-content">
+              <div class="honor-year">2023–2024</div>
+              <h3 class="honor-name">Bronze — Violympic National Finals</h3>
+              <p class="honor-desc">National round of the Violympic mathematics competition.</p>
+            </div>
+          </div>
+
+          <div class="honor-card">
+            <div class="honor-img-wrap">
+              <!-- Slider container chứa nhiều ảnh -->
+              <div class="slider-container">
+                <img src="assets/h&a/Giai Le Quy Don - Báo Khăn Quàng Đỏ/DSC00195.JPG" alt="" class="slider-img active">
+                <img src="assets/h&a/Giai Le Quy Don - Báo Khăn Quàng Đỏ/DSC04223.jpg" alt="" class="slider-img">
+              </div>
+
+              <!-- Nút điều hướng ảnh (Chỉ hiển thị khi có nhiều ảnh) -->
+              <button class="slider-btn prev-btn" aria-label="Previous image">&lt;</button>
+              <button class="slider-btn next-btn" aria-label="Next image">&gt;</button>
+
+              <div class="honor-badge">HM</div>
+            </div>
+            <div class="honor-content">
+              <div class="honor-year">—</div>
+              <h3 class="honor-name">Honorable Mention — Lê Quý Đôn Award</h3>
+              <p class="honor-desc">Recognition on the <em>Khăn Quàng Đỏ</em> publication for contributions in science
+                and education.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── 02. RESEARCH ── -->
+      <section id="research" class="section">
+        <div class="section-header">
+          <span class="section-num">_02</span>
+          <h2 class="section-title">Research Experience</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-top">
+            <div class="research-label">Published · IJMSM Vol.3 Issue 1 · 2026</div>
+            <div class="research-doi">DOI: 10.71141/30485037/V3I1P123</div>
+          </div>
+          <h3 class="research-title">
+            <a href="https://ijmsm.org/ijmsm-v3i1p123.html" target="_blank" rel="noopener noreferrer"
+              class="research-paper-link">
+              Improving Performance of Electricity Theft Detection Using Combined Machine Learning Models with Real
+              Applications
+              in Vietnam
+            </a>
+          </h3>
+          <p class="research-authors">Ong Luong Tien Huy, Nguyen Quang Tung, Nguyen Hoang Nam Anh, Nguyen Quang Minh,
+            Ngo Le Duc Anh, <strong>Vo Minh Khoi</strong>, Vu Xuan Manh</p>
+
+          <p class="research-abstract">Electricity theft — a form of non-technical loss — causes significant economic
+            and safety damage globally. This study proposes a machine learning pipeline applied to real smart meter data
+            from Vietnam Electricity Corporation (EVN), covering 34,823 customers. The pipeline handles missing values,
+            normalizes features, extracts statistical consumption patterns, and balances the skewed class distribution
+            via over/undersampling. Multiple classifiers (SVM, KNN, Random Forest, Logistic Regression, Naïve Bayes) are
+            benchmarked, with the proposed combined model achieving <strong>up to 99% accuracy</strong> — outperforming
+            AES and HWOA-CSO baselines across accuracy, precision, recall, F1-score, and detection rate metrics.</p>
+
+          <div class="research-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Smart Grid</span>
+            <span class="tag">Python</span>
+            <span class="tag">MATLAB/Simulink</span>
+            <span class="tag">EVN Dataset</span>
+            <span class="tag">Imbalanced Classification</span>
+          </div>
+
+          <div class="research-metrics">
+            <div class="metric">
+              <span class="metric-val">99%</span>
+              <span class="metric-label">Accuracy</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">98.6%</span>
+              <span class="metric-label">Recall @30s</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">97%</span>
+              <span class="metric-label">Precision @30s</span>
+            </div>
+            <div class="metric">
+              <span class="metric-val">34,823</span>
+              <span class="metric-label">Customers</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 03. PROJECTS ── -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <span class="section-num">_03</span>
+          <h2 class="section-title">Personal Projects</h2>
+          <div class="header-line"></div>
+        </div>
+      
+        <div class="projects-grid">
+      
+          <div class="project-card featured">
+            <div class="project-status">FEATURED PROJECT</div>
+            <h3 class="project-name">PhysioTrack — Smart Physical Rehabilitation & Bio-Feedback Device</h3>
+            <p class="project-desc">
+              Designed and built a wearable, automated rehabilitation device to assist patients in post-injury joint recovery.
+              The system integrates flex sensors and surface electromyography (sEMG) modules with an ESP32 microcontroller to
+              capture real-time muscle engagement and motion data.
+              Developed custom digital signal processing (DSP) algorithms to filter noise, calculate precise joint angles, and
+              stream bio-feedback metrics to an interactive dashboard, allowing patients and physical therapists to track
+              recovery progress dynamically.
+            </p>
+            <div class="project-stack">
+              <span class="stack-item">ESP32 / Arduino</span>
+              <span class="stack-item">Bio-Sensors (sEMG & Flex)</span>
+              <span class="stack-item">Signal Processing</span>
+              <span class="stack-item">I2C/SPI Protocols</span>
+              <span class="stack-item">Embedded C++</span>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <!-- ── 04. SOCIAL ── -->
+      <section id="social" class="section">
+        <div class="section-header">
+          <span class="section-num">_04</span>
+          <h2 class="section-title">Social Work &amp; Activities</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">May 2026</div>
+            <div class="tl-body">
+              <h3 class="tl-title">Volunteer — Chợ Rẫy Hospital</h3>
+              <p class="tl-desc">Community healthcare volunteer, providing support and assistance to patients and
+                hospital
+                staff at one of Vietnam's largest public hospitals.</p>
+
+              <div class="tl-images">
+                <img src="assets/s&a/Bệnh viện chợ Rẫy/Võ Minh Khôi_page-0003.jpg" alt="Volunteer Chợ Rẫy - Ảnh 1">
+                <img src="assets/s&a/Bệnh viện chợ Rẫy/IMG_1256.JPG" alt="Volunteer Chợ Rẫy - Ảnh 2">
+                <img src="assets/s&a/Bệnh viện chợ Rẫy/IMG_1257.JPG" alt="Volunteer Chợ Rẫy - Ảnh 3">
+                <img src="assets/s&a/Bệnh viện chợ Rẫy/IMG_1259.JPG" alt="Volunteer Chợ Rẫy - Ảnh 4">
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2025</div>
+            <div class="tl-body">
+              <h3 class="tl-title">Cultural Exchange Coordinator — VNU × Nanyang JC</h3>
+              <p class="tl-desc">Served as a collaborating representative in the bilateral cultural exchange program
+                between
+                VNU-HCM High School for the Gifted and Nanyang Junior College, Singapore, facilitating cross-cultural
+                dialogue
+                between Vietnamese and Singaporean students.</p>
+
+              <div class="tl-images">
+                <img src="assets/s&a/Giao luu van hoa 2025/Giao luu van hoa 2025.jpg" alt="VNU x Nanyang JC">
+                <img src="assets/s&a/Giao luu van hoa 2025/IMG_7093.PNG" alt="VNU x Nanyang JC 2">
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2025</div>
+            <div class="tl-body">
+              <h3 class="tl-title">Volunteer — Hoa Phượng Đỏ Summer Campaign</h3>
+              <p class="tl-desc">Member of the <em>Tự Hào Sử Việt</em> squad — a unit dedicated to promoting Vietnamese
+                history and national heritage as part of the annual summer youth volunteer campaign.</p>
+
+              <div class="tl-images">
+                <img src="assets/s&a/Hoa Phuong Do 2025/Hoa Phuong Do 2025.jpg" alt="Hoa Phượng Đỏ">
+                <img src="assets/s&a/Hoa Phuong Do 2025/IMG_8059.JPG" alt="Hoa Phượng Đỏ 2">
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">ongoing</div>
+            <div class="tl-body">
+              <h3 class="tl-title">Academic Committee — Physics Division, 2School Guideline</h3>
+              <p class="tl-desc">Member of the physics academic advisory team, contributing to curriculum guidance and
+                peer
+                learning resources.</p>
+
+              <div class="tl-images">
+                <img src="assets/s&a/2School Guideline Project/DSC00187.JPG" alt="2School Guideline Physics">
+                <img src="assets/s&a/2School Guideline Project/IMG_7094.PNG" alt="2School Guideline Physics 2">
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">ongoing</div>
+            <div class="tl-body">
+              <h3 class="tl-title">Badminton Club — VNU-HCM Gifted School</h3>
+              <p class="tl-desc">Active member of the school badminton club — competitive training and team spirit
+                outside the
+                classroom.</p>
+
+              <div class="tl-images">
+                <img src="assets/s&a/CLB Cầu lông/DSC05080.JPG" alt="Badminton Club">
+                <img src="assets/s&a/CLB Cầu lông/DSC05083.JPG" alt="Badminton Club2">
+                <img src="assets/s&a/CLB Cầu lông/DSC05088.JPG" alt="Badminton Club3">
+                <img src="assets/s&a/CLB Cầu lông/DSC05092.JPG" alt="Badminton Club4">
+                <img src="assets/s&a/CLB Cầu lông/DSC05093-1.jpg" alt="Badminton Club5">
+                <img src="assets/s&a/CLB Cầu lông/DSC05096.JPG" alt="Badminton Club6">
+                <img src="assets/s&a/CLB Cầu lông/DSC05097.JPG" alt="Badminton Club7">
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024 - 2025</div>
+            <div class="tl-body">
+              <h3 class="tl-title">Nhật Mộng Workshop — Individual Mentor</h3>
+              <p class="tl-desc">
+                Actively engaged as a 1-1 mentor in the Nhật Mộng workshop, supporting participants with
+                personalized guidance, fostering creativity, and contributing to the overall success of the program.
+              </p>
+
+              <div class="tl-images">
+                <img src="assets/s&a/2School Guideline Project/DSC00188.jpeg"
+                  alt="Certificate of Appreciation Võ Minh Khôi">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- ── 05. SKILLS ── -->
+      <section id="skills" class="section">
+        <div class="section-header">
+          <span class="section-num">_05</span>
+          <h2 class="section-title">Skills &amp; Interests</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-block">
+            <h3 class="skill-block-title">// programming</h3>
+            <div class="skill-bars">
+              <div class="skill-row"><span class="skill-name">Python</span>
+                <div class="bar-track">
+                  <div class="bar-fill" data-w="85"></div>
+                </div>
+              </div>
+              <div class="skill-row"><span class="skill-name">C++</span>
+                <div class="bar-track">
+                  <div class="bar-fill" data-w="70"></div>
+                </div>
+              </div>
+              <div class="skill-row"><span class="skill-name">MATLAB</span>
+                <div class="bar-track">
+                  <div class="bar-fill" data-w="65"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h3 class="skill-block-title">// hardware</h3>
+            <div class="skill-bars">
+              <div class="skill-row"><span class="skill-name">Arduino</span>
+                <div class="bar-track">
+                  <div class="bar-fill" data-w="80"></div>
+                </div>
+              </div>
+              <div class="skill-row"><span class="skill-name">ESP32</span>
+                <div class="bar-track">
+                  <div class="bar-fill" data-w="75"></div>
+                </div>
+              </div>
+              <div class="skill-row"><span class="skill-name">Simulink</span>
+                <div class="bar-track">
+                  <div class="bar-fill" data-w="60"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h3 class="skill-block-title">// languages</h3>
+            <div class="lang-list">
+              <div class="lang-item"><span class="lang-name">Vietnamese</span><span class="lang-level">Native</span>
+              </div>
+              <div class="lang-item"><span class="lang-name">English</span><span class="lang-level">Proficient</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h3 class="skill-block-title">// interests</h3>
+            <div class="interest-cloud">
+              <span class="interest">Embedded Systems</span>
+              <span class="interest">Smart Grid</span>
+              <span class="interest">IoT</span>
+              <span class="interest">Signal Processing</span>
+              <span class="interest">Applied ML</span>
+              <span class="interest">Aquaculture Tech</span>
+              <span class="interest">Badminton</span>
+              <span class="interest">Cultural Exchange</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <span class="footer-name">Võ Minh Khôi</span>
+          <span class="footer-sep">·</span>
+          <span class="footer-school">VNU-HCM High School for the Gifted</span>
+        </div>
+
+        <div class="footer-contact">
+          <a href="mailto:vominhkhoi2305@gmail.com" class="footer-link">vominhkhoi2305@gmail.com</a>
+          <span class="footer-sep">·</span>
+
+          <a href="https://facebook.com/chèn-username-vào-đây" target="_blank" rel="noopener noreferrer"
+            class="footer-link">Facebook</a>
+          <span class="footer-sep">·</span>
+
+          <a href="assets/VoMinhKhoi_CV.pdf" download class="footer-link cv-download">[DOWNLOAD CV]</a>
+        </div>
+
+        <div class="footer-copy">built with intention and love · <span id="footer-year"></span></div>
+      </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
