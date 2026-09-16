@@ -803,21 +803,41 @@ body {
 /* --- SỬA LẠI RIÊNG CHO CARD FEATURED NẰM DÀI --- */
 .project-card.featured {
   grid-column: 1 / -1;
-  /* Ép card chiếm toàn bộ các cột từ đầu đến cuối lưới */
   border-color: var(--green);
   background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
   box-shadow: 0 0 24px var(--green-glow);
-
-  /* Sử dụng flexbox định hướng lại layout bên trong card khi nằm ngang */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-/* --- GIỚI HẠN CHIỀU RỘNG TEXT (Để khi màn hình rộng, text không bị dài tuột luốt) --- */
+/* Layout 2 cột bên trong featured card */
+.project-body {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* --- GIỚI HẠN CHIỀU RỘNG TEXT --- */
 .project-card.featured .project-desc {
   max-width: 800px;
-  /* Độ dài lý tưởng để đọc mô tả khi card giãn rộng */
   font-size: 0.78rem;
   color: var(--muted-hi);
   line-height: 1.7;
@@ -857,6 +877,45 @@ body {
   color: var(--text-lo);
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+/* --- NÚT VIEW FULL DOCUMENTATION --- */
+.project-actions {
+  margin-top: 1.25rem;
+}
+
+.btn-doc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-hi);
+  background: var(--bg-3);
+  border: 1px solid var(--border-hi);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-doc:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--bg-2);
+}
+
+/* --- RESPONSIVE CHO TABLET & MOBILE --- */
+@media (max-width: 768px) {
+  .project-body {
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+  }
+
+  .project-media,
+  .project-info {
+    width: 100%;
+  }
 }
 
 /* ── TIMELINE ── */
